@@ -22,6 +22,9 @@ nav > ul{
     list-style:none;
     justify-content: space-between;
 }
+nav > ul > li{
+    margin:20px 0;
+}
 nav > ul > li>a{
     color:#BB9C2A;
     text-decoration:none;
@@ -57,6 +60,7 @@ nav > ul > li>a{
 .tickybot p:nth-child(2){
     color:white;
     opacity:0.8;
+    font-size:15px;
 }
 .tickybot button{
     background:white;
@@ -274,6 +278,18 @@ button>img:hover{
 .pages{
     width:90%;
 }
+.white-background >p{
+    font-size:13px;
+}
+.page span p{
+    font-size:13px;
+}
+.linear-grey p{
+   font-size:13px; 
+}
+footer p{
+    font-size:10px;
+}
 }
 @media screen and (max-width:645px){
 .pages{
@@ -305,5 +321,10 @@ nav > ul{
     
 .yellow-circle{
     margin-right:0;
+}
+}
+@media screen and (max-width:500px){
+nav > ul{
+    width:90%;
 }
 }
