@@ -64,12 +64,12 @@ nav > ul > li>a{
 }
 .tickybot button{
     background:white;
-    width:180px;
-    height:40px;
+    width:200px;
+    height:50px;
     color:#333;
     border:none;
-    margin:20px 0;
-    
+    border-radius:3px;
+    margin:20px 0;  
 }
 .yellow-circle{
     width:300px;
@@ -87,13 +87,12 @@ nav > ul > li>a{
     margin:0 auto;
     right:0;
     left:0;
+    
+    animation-name:roll;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite; 
 }
 
-.yellow-circle >img:hover{
-    animation-name:roll;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;  
-}
 @keyframes roll{
     0% {transform: translateY(0px)}
     50% {transform: translateY(-5px)}
@@ -111,6 +110,7 @@ nav > ul > li>a{
 .white-background >p{
     margin-top:2rem;
 }
+
 .hr{
     background:#47C1DC;
     width:120px;
@@ -123,6 +123,10 @@ nav > ul > li>a{
     clear:both;
     width:45%;
     padding-right:10px;
+}
+.left img{
+    height:14px;
+    width:14px;
 }
 .green-background{
     display:flex;
@@ -151,6 +155,7 @@ nav > ul > li>a{
     background:white;
     margin:25px 20px;
     font-size:15px;
+    border-radius:3px;
 }
 .page span p{
     padding: 4px;
@@ -160,8 +165,8 @@ nav > ul > li>a{
     background:#282E43;
 }
 .top-inner img{
-    width:150px;
-    height:150px;
+    width:200px;
+    height:200px;
     margin-top:15%;
 }
 #red{
@@ -189,10 +194,11 @@ nav > ul > li>a{
 }
 .linear-grey> button{
     background:#201721;
-    width:180px;
-    height:40px;
+    width:200px;
+    height:50px;
     color:white;
     border:none;
+    border-radius:3px;
     margin:20px 0;
 }
 #fix-me{
@@ -206,13 +212,11 @@ nav > ul > li>a{
     position:fixed;
     right:2vw;
     bottom:3rem;
-}
-#fix-me:hover{
+    
     animation-name:fix;
     animation-duration: 1s;
     animation-iteration-count: infinite;
 }
-
 @keyframes fix{
     0% {transform: translateY(0px)}
     50% {transform: translateY(-5px)}
@@ -235,11 +239,15 @@ footer p{
 footer a{
     color:white;
 }
+footer p > b{
+    color:#f778a1;
+    font-size:14px;
+}
 button img{
     width:auto;
     height:auto;
-    max-width:25px;
-    max-height:25px;
+    max-width:30px;
+    max-height:30px;
     vertical-align:middle;
     margin-right:7px;
      
@@ -258,6 +266,7 @@ button>img:hover{
     50% {transform: translateY(-3px)}
     100% {transform: translateY(0px)}
 }
+
 /* media queries*/
 @media screen and (max-width:869px){
 .pages{
